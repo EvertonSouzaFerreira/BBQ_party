@@ -123,12 +123,16 @@ li{
 }
 @media screen and (max-width: 500px){
 #containerImagem{
+    width: 500px;
+    height: 900px;
     flex-direction: column-reverse;
     align-items: center;
 }
 
 .outraDiv{
-    width: 200px;
-    height: 100%;
+    width: 300px;
+}
+.sizeDiv{
+    height: 200px;
 }
 }
