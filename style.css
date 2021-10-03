@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #77bed0;
+    
+}
+#containerImagem{ 
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./imagens/bbq-party.jpg);
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.outraDiv{
+    width: 300px;
+    height: 500px;
+    background-color: #77bed0d5;
+    box-shadow: 10px 5px 15px 5px #40646d;
+    border-radius: 50px;
+    margin: 10px;   
+}
+.containerOptions{
+    width: 100%;
+    height: 100%;
+    background-size: 800px 200px;
+    background-image: url(./imagens/nuvem.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+#comidas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80%);
+    width: 100%;
+    height: 30%;
+    background-size: 950px 200px;
+    background-image: url(./imagens/nuvem.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+#comidas h1{
+    top: 0%;
+}
+h1{
+    color: #a00000;
+    position: relative;
+    top: 12%;
+    right: 2%;
+}
+.caixaTexto{
+    background-color: #6baebe;
+    color: #a00000;
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-shadow: 10px 5px 15px 5px #40646d;
+    border: none;
+    
+}
+.todosInputs{
+    width: 100%;
+    position: relative;
+    top: 20%;
+    margin-left: 5px;
+    
+}
+.stiloCheck{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    align-items: center;
+   
+    justify-content: space-around;
+}
+button{
+    border-style: none;
+    box-shadow: 10px 5px 15px 5px #40646d;
+    background-color: #77bed0;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+ul{
+    margin: 20px;
+}
+li{
+    margin-bottom: 10px;
+}
+
+#carne{  
+    list-style-type: "\1F356";
+}
+#vegan{
+    list-style-type: "\1F96C";
+}
+#frango{
+    list-style-type:"\1F414";
+}
+#cerveja{  
+    list-style-type: "\1F37B";
+}
+#refri{  
+    list-style-type: "\1F964";
+}
