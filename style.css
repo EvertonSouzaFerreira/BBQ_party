@@ -121,3 +121,14 @@ li{
 #refri{  
     list-style-type: "\1F964";
 }
+@media screen and (max-width: 500px){
+#containerImagem{
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.outraDiv{
+    width: 200px;
+    height: 100%;
+}
+}
