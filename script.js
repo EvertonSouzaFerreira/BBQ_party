@@ -21,7 +21,11 @@ add.addEventListener('click', ()=>{
 })
 
 clean.addEventListener('click', ()=>{
-    alert(`a duracao e de ${duracao.value} `)
+    ress.innerHTML = "";
+    man.value = "";
+    woman.value = "";
+    children.value = "";
+    duracao.value = "";
 })
 
 checkMan.addEventListener('change', ()=>{
