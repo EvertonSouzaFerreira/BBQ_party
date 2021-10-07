@@ -123,40 +123,40 @@ function itensChurrasco(){
 function todasRess(carne, cerveja, bebidas){
 
     
-    if(checkGalinha.checked){
-        ress.innerHTML = `<li id='frango'>Frango = ${carne/1000} Kg </li>`
+    if(checkVaca.checked){
+        ress.innerHTML = `<li id='carne'>Carne Vermelha = ${carnePP(duracao)/1000} Kg </li>`
         BebidasRess(cerveja, bebidas)
-        if(checkGalinha.checked && checkVaca.checked && !checkVegan.checked){
-            ress.innerHTML = `<li id='carne'>Carne Vermelha = ${carne/1000 /2} Kg </li>`
-            ress.innerHTML += `<li id='frango'>Frango = ${carne/1000/ 2} Kg </li>`
-            BebidasRess(cerveja, bebidas)
-        }
-        if(checkGalinha.checked && !checkVaca.checked && checkVegan.checked){
-            ress.innerHTML = `<li id='vegan'>Carne Vegetal = ${carne/1000/ 2} Kg </li>`
-            ress.innerHTML += `<li id='frango'>Frango = ${carne/1000/2 } Kg </li>`
-            BebidasRess(cerveja, bebidas)
-        }
         
     }
-    else if(checkVaca.checked){
-        ress.innerHTML = `<li id='carne'>Carne Vermelha = ${carne/1000} Kg </li>`
-        BebidasRess(cerveja, bebidas)
-        if(checkVaca.checked && checkVegan.checked && !checkGalinha.checked){
-            ress.innerHTML = `<li id='carne'>Carne Vermelha = ${carne/1000 /2 } Kg </li>`
-            ress.innerHTML += `<li id='vegan'>Carne Vegan = ${carne/1000 /2} Kg </li>`
-            BebidasRess(cerveja, bebidas)
-        }
+    if(checkGalinha.checked){
+        ress.innerHTML = `<li id='frango'>Frango = ${carne/1000} Kg </li>`
+        BebidasRess(cerveja, bebidas)   
     }
-    else if(checkVegan.checked){
+    if(checkVegan.checked){
         ress.innerHTML = `<li id='vegan'>Carne Vegetal = ${carne/1000} Kg </li>`
         BebidasRess(cerveja, bebidas)
     }
-   
-    
-    else{
-        ress.innerHTML = `<li id='carne'>Carne Vermelha = ${carne/1000 /2 } Kg </li>`
+
+    if(checkGalinha.checked && checkVaca.checked && checkVegan.checked ){
+        ress.innerHTML = `<li id='carne'>Carne Vermelha = ${carne/1000 /2} Kg </li>`
+        ress.innerHTML += `<li id='frango'>Frango = ${carne/1000/ 2} Kg </li>`
         ress.innerHTML += `<li id='vegan'>Carne Vegan = ${carne/1000 /2} Kg </li>`
-        ress.innerHTML += `<li id='frango'>Frango = ${carne/1000} Kg </li>`
+        BebidasRess(cerveja, bebidas)   
+    }
+
+    if(!checkGalinha.checked && checkVaca.checked && checkVegan.checked){
+        ress.innerHTML = `<li id='carne'>Carne Vermelha = ${carne/1000 /2} Kg </li>`
+        ress.innerHTML += `<li id='vegan'>Carne Vegan = ${carne/1000 /2} Kg </li>`
+        BebidasRess(cerveja, bebidas)
+    }
+    if(!checkVaca.checked && checkGalinha.checked && checkVegan.checked){
+        ress.innerHTML = `<li id='frango'>Frango = ${carne/1000/2} Kg </li>`
+        ress.innerHTML += `<li id='vegan'>Carne Vegan = ${carne/1000 /2} Kg </li>`
+        BebidasRess(cerveja, bebidas)
+    }
+    if(!checkVegan.checked && checkGalinha.checked && checkVaca.checked){
+        ress.innerHTML = `<li id='frango'>Frango = ${carne/1000/2} Kg </li>`
+        ress.innerHTML += `<li id='vegan'>Carne Vegetal = ${carne/1000} Kg </li>`
         BebidasRess(cerveja, bebidas)
     }
          
